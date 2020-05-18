@@ -1,0 +1,317 @@
+
+.menu{color:orange;
+    font-family:Showcard Gothic;
+    font-size:26px;
+    text-decoration:none;}
+.nav-li{list-style:none;
+    display:inline;
+    margin-left:10px}
+.nav-li1{list-style:none;
+    display:inline;}
+
+.amenu{text-decoration:none;
+    color:orange;
+    font-size:24px;
+    font-family:Showcard Gothic;
+    padding-left:2%}
+
+body{background-color:RGB(23,12,10)}
+#maintext{color:orange;
+    margin-top:35%;
+    font-family:goudy stout;
+   }
+
+.Film1{height:60%;
+    border-radius:15px;
+    background-color:RGB(255,229,200);
+    margin-top:2%;
+    margin-bottom:1%;
+width:70%;
+margin-left:15%;
+}
+.imgfilm1{width:240px;
+    height:360px;
+    float:left;
+    margin-left:1%;
+    padding-top:1%;
+    padding-right:1%;
+padding-bottom:1%;}
+.Film2{height:60%;
+    border-radius:15px;
+    background-color:RGB(255,229,200);
+    margin-bottom:1%;
+width:70%;
+margin-left:15%;
+}
+.imgfilm2{padding-top:1%;
+    height:width:240px;
+    height:360px;
+    float:right;
+    padding:1%;
+padding-left:1%;
+padding-bottom:1%;}
+.imgfilm3{padding-top:1%;
+    height:width:240px;
+    height:360px;
+    float:left;
+    padding:1%;
+padding-bottom:1%;}
+.imgfilmdirector{margin:1%;
+    float:left;
+    width:400px;
+    border:1px orange solid;
+margin-left:15% }
+.dtext{color:white;
+    word-break:break-all;margin-top:1%;
+    font-family:Perpetua Titling MT;
+    font-size:16px;
+width:70%;
+margin-left:15% }
+#Name{color:orange}
+
+.PL{color:orange;
+    font-family:Showcard Gothic;
+    text-align: center;
+margin-top:3%}
+.imgplife{margin:1%;
+    float:right;
+    width:400px;
+    border:1px orange solid;
+margin-right:15%}
+.Thing{color:orange;
+    font-family:Showcard Gothic;
+    text-align: center;
+margin-top:7%}
+.Ttext{
+    margin-top:1%;
+    font-family:Times New Roman;
+    font-size:22px  ;
+        color:rgb(23,12,10);
+    padding-bottom:10px;
+}
+.Directorh{color:orange;
+    font-family:Showcard Gothic;
+    text-align: center;
+    margin-top:2%}
+.h3{text-align:center}
+.Filmsh{color:orange;
+    font-family:Showcard Gothic;
+    text-align: center;
+    margin-top:50%}
+.Ftext{padding:2%;
+    font-family:Times New Roman;
+    font-size:20px  ;
+        color:rgb(23,12,10)
+}
+
+///////////////////////////////////////////MEDIA///////////////////////////////
+@media screen and (max-width:1024px){
+    #Films{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:700px){
+    #Films img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+        height:200px;
+        padding:10px;
+   
+    }
+    #Films p{
+        width: 100%;
+        word-wrap:break-word;
+    }
+    #Film1{
+        margin:10px;
+    }
+    #Director img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+        height:300px;}
+         #divThing img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+             height:200px;}
+        #divSE img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+        height:400px;
+}
+@media screen and (max-width:460px){
+    .menu-ul{
+        display: block;
+        margin-top:50px;
+    }
+    
+    .menu-ul li:not(:first-child){
+        display: none;
+    }
+    .menu-ul.responsive li {
+        float: none;
+        display: block;
+    }
+}
+@media screen and (max-width:400px){
+    /*   section3   */
+    #Films img{
+        width: 100%;
+    }
+    #Film1,#Film2{     
+        flex-direction: column;
+    }
+
+
+}
+    .filmdesc{color:darorange;
+    font-size:16px;}
+    .Me{width:70%}
+    
+    * {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+ margin-left:200px;
+   
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+    
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+    
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color:white; /*rgba(0, 0, 0, 0.8)*/
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color:#0D0D0D;
+  font-family: Impact;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 15%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container1 {margin-left: 200px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    
